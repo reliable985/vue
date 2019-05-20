@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import {reqCategorys} from '../../../api'
+import {reqHomeData} from '../../../api'
 
   import BScroll from 'better-scroll'
   export default {
@@ -63,7 +63,7 @@ import {reqCategorys} from '../../../api'
           click: true//不阻止点击事件触发
         })
       })
-      const result = await reqCategorys()
+      const result = await reqHomeData()
       this.openitem = result.data.kingKongModule.kingKongList
     },
     methods:{

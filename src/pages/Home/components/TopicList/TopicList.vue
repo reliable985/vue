@@ -44,7 +44,6 @@
      const my=  new BScroll('.home_wrap', {
          scrollX: true,//纵向滑动
        })
-       console.log(my)
      })
    }
   }

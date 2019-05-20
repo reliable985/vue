@@ -22,7 +22,8 @@
           click:true
         })
       })
-        this.$store.dispatch('getHomeData')
+
+      this.$store.dispatch('getHomeData')
     },
 
    updated() {

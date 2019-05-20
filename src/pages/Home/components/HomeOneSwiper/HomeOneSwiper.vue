@@ -17,7 +17,7 @@
 
 <script>
   import 'swiper/dist/css/swiper.css'
-  import Swiper from 'swiper'
+ /* import Swiper from 'swiper'*/
   export default {
     name:'HomeOneSwiper',
     data() {
@@ -33,7 +33,7 @@
       }
     },
     mounted(){
-          new Swiper ('.swiper-container', {
+          /*new Swiper ('.swiper-container', {
             loop: true, // 循环模式选项
             autoplay:true,//自动切换
             // 如果需要分页器
@@ -45,7 +45,7 @@
               el: '.swiper-scrollbar',
             },
 
-          })
+          })*/
 
     }
 

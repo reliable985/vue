@@ -43,9 +43,9 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../../../../common/stylus/mixins.styl"
-  @import "../../../../common/stylus/mixins.styl"
 
   .zhong_chou_box
+    border-bottom 20px solid #f5f5f5
     .z_chou_header
       display flex
       align-items center

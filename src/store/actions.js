@@ -14,23 +14,48 @@
   }
 }*/
 
-import {reqCategorys} from '../api/index'
+import {reqHomeData,reqCategoryData} from '../api/index'
 import {
   GET_HOME_DATA,
+  GET_CATEGORY_DATA
+
 } from "./mutation-types"
 export default {
 
   async getHomeData({commit}){
+
      //发ajax请求
-       const result= await reqCategorys()
+       const result= await reqHomeData()
        const homeData=result.data
         //判断数据是否成功
       if (result.code===0){
         commit(GET_HOME_DATA,{homeData})
+
       } else {
         alert('请求数据失败')
       }
+   },
+  //获取第二页数据
+  async getCategoryData({commit}){
 
-   }
+    //发ajax请求
+      const CategoryData1= await reqCategoryData()
+      const CategoryData=CategoryData1.data
+
+    //判断是否成功
+      if (CategoryData1.code===0){
+         console.log(CategoryData)
+        commit(GET_CATEGORY_DATA,CategoryData)
+      }else {
+        alert('shibai ')
+      }
+
+  }
+
+
+
+
+
+
 
 }

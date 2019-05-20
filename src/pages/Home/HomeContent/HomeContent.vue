@@ -11,6 +11,8 @@
   <PopularItemList/>
   <TopicList/>
   <zhongChouList/>
+  <CategoryModule/>
+  <HomeBottom/>
 </div>
 </template>
 
@@ -28,6 +30,8 @@
   import PopularItemList from 'pages/Home/components/PopularItemList/PopularItemList'
   import TopicList from 'pages/Home/components/TopicList/TopicList'
   import zhongChouList from 'pages/Home/components/zhongChouList/zhongChouList'
+  import CategoryModule from 'pages/Home/components/CategoryModule/CategoryModule'
+  import HomeBottom from 'pages/Home/components/HomeBottom/HomeBottom'
   export default {
     name: "HomeContent",
     components:{
@@ -41,7 +45,9 @@
       NewItemList,
       PopularItemList,
       TopicList,
-      zhongChouList
+      zhongChouList,
+      CategoryModule,
+      HomeBottom
     },
 
   }
@@ -49,6 +55,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .content
+    height 10600px
     zoom 1
     .wrapper
       height 100px

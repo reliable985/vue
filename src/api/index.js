@@ -1,8 +1,12 @@
 //与后台交互
 import ajax from './ajax'
 /*
-* 获取退货退款信息
+* 获取homedata
 * */
-export const reqCategorys = () => ajax('/mock/home',)
+export const reqHomeData = () => ajax('/mock/home',)
+/*
+* 获取category
+* */
+export  const  reqCategoryData=() =>ajax('/mock/category')
 
 

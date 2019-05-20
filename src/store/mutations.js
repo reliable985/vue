@@ -8,9 +8,13 @@
 }*/
 import {
   GET_HOME_DATA,
+  GET_CATEGORY_DATA
 } from "./mutation-types"
 export default {
   [GET_HOME_DATA](state,{homeData}){
     state.homeData=homeData //home数据
-  }
+  },
+ [GET_CATEGORY_DATA](state,categoryData){
+    state.categoryData=categoryData
+ }
 }
