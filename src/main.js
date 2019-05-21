@@ -6,12 +6,14 @@ import axios from 'axios'
 import VueLazyload from 'vue-lazyload'
 import store from './store'
 import 'lib-flexible/flexible'
+import './Validate'
+
 
 require('./mockData/mockServer')//引入mock数据
 Vue.prototype.$http = axios
-
 Vue.config.productionTip = false
 Vue.use(VueLazyload)
+
 
 
 new Vue({

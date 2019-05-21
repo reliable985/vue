@@ -13,12 +13,8 @@
 
 <script>
 
-  import NavList from '../../../../components/HeadNav/NavList/NavList'
   export default {
     name: "HeadNav",
-    components:{
-      NavList
-    },
 
   }
 </script>
@@ -28,6 +24,8 @@
 .box
   width 100%
   height 88px
+  z-index 3
+  background-color white
   bottom-border-1px(#d9d9d9)
   .header
     position fixed

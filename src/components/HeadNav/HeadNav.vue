@@ -7,7 +7,7 @@
         <i class="iconfont iconsearch"  alt=""></i>
         <span>搜索商品，共xxxx件好物</span>
       </div>
-      <span class="login">登录</span>
+      <span class="login" @click="$router.push('/personage')">登录</span>
     </div>
     <NavList/>
   </header>

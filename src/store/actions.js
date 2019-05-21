@@ -14,11 +14,11 @@
   }
 }*/
 
-import {reqHomeData,reqCategoryData} from '../api/index'
+import {reqHomeData,reqCategoryData,reqRecommendData} from '../api/index'
 import {
   GET_HOME_DATA,
-  GET_CATEGORY_DATA
-
+  GET_CATEGORY_DATA,
+ // GET_RECOMMEND_DATA
 } from "./mutation-types"
 export default {
 
@@ -44,13 +44,22 @@ export default {
 
     //判断是否成功
       if (CategoryData1.code===0){
-         console.log(CategoryData)
         commit(GET_CATEGORY_DATA,CategoryData)
       }else {
         alert('shibai ')
       }
+  },
+  /*async getCecommendData({commit}){
+           const result3= await reqRecommendData()
+          if (result3.code===200){
+            //console.log(result3.data)
 
-  }
+          } else {
+            alert('报错')
+          }
+        }*/
+
+
 
 
 

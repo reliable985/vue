@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderNave v-show="$route.meta.isSHowHeader" />
       <router-view/>
-    <FooterNav/>
+    <FooterNav v-show="$route.meta.isSHowFooter"/>
   </div>
 </template>
 

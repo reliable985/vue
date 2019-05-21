@@ -1,26 +1,26 @@
 <template>
- <div class="box ">
-   <div class="categoryModule_box clearfix "  v-if="categoryModule" >
-     <div class="categoryModule_top" v-for=" (items ,index) in categoryModule " :key="index" >
-       <img class="categoryModuleTop_img" :src=" items.titlePicUrl" alt="品类展示">
-       <div class="categoryModule_bottom   " >
-       <div class="goods_wrapper_">
-         <ul class="categoryModuleBottom_box "  >
-           <li class="categoryModuleBottom_item"  v-for="(item,index) in items.itemList " :key="index" >
-             <img class="item_listPicUrl" :src="item.listPicUrl" alt="">
-             <span class="item_name" >{{item.name}}</span>
-             <span class="item_retailPrice">￥{{item.retailPrice}}</span>
-           </li>
-         </ul>
-       </div>
-       </div>
-     </div>
+  <div class="box ">
+    <div class="categoryModule_box clearfix "  v-if="categoryModule" >
+      <div class="categoryModule_top" v-for=" (items ,index) in categoryModule " :key="index" >
+        <img class="categoryModuleTop_img" :src=" items.titlePicUrl" alt="品类展示">
+        <div class="categoryModule_bottom   " >
+          <div class="goods_wrapper_">
+            <ul class="categoryModuleBottom_box "  >
+              <li class="categoryModuleBottom_item"  v-for="(item,index) in items.itemList " :key="index" >
+                <img class="item_listPicUrl" :src="item.listPicUrl" alt="">
+                <span class="item_name" >{{item.name}}</span>
+                <span class="item_retailPrice">￥{{item.retailPrice}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
 
 
 
-   </div>
- </div>
+    </div>
+  </div>
 
 
 </template>
@@ -32,7 +32,7 @@
     name: "CategoryModule",
     data(){
       return{
-       items:[]
+        items:[]
       }
     },
 
@@ -49,11 +49,11 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 
-    .categoryModule_box
-      margin-bottom 20px
-      .categoryModule_top
-        .categoryModuleTop_img
-          width 100%
+  .categoryModule_box
+    margin-bottom 20px
+    .categoryModule_top
+      .categoryModuleTop_img
+        width 100%
       .categoryModule_bottom
         .categoryModuleBottom_box
           margin-top 20px

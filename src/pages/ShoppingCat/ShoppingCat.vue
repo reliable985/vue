@@ -25,9 +25,9 @@
 </template>
 
 <script>
-    export default {
-        name: "ShoppingCat"
-    }
+  export default {
+    name: "ShoppingCat"
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>

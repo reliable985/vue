@@ -5,6 +5,7 @@
 
  export default {
    homeData:[],
-   categoryData:[]
+   categoryData:[],
+   /*cecommendData:[],*/
 }
 

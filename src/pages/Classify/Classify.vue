@@ -1,19 +1,24 @@
 <template>
     <div>
       <ClassifyHeader/>
-      <ClassifyLeftNav/>
+      <div style="display: flex" >
+        <ClassifyLeftNav />
+        <ClassifyRightItem  />
+      </div>
     </div>
 </template>
 
 <script>
   import ClassifyHeader from 'pages/Classify/components/ClassifyHeader/ClassifyHeader'
   import ClassifyLeftNav from 'pages/Classify/components/ClassifyLeftNav/ClassifyLeftNav'
+  import ClassifyRightItem from 'pages/Classify/components/ClassifyRightItem/ClassifyRightItem'
   import {mapState} from 'vuex'
     export default {
         name: "Classify",
         components:{
           ClassifyHeader,
-          ClassifyLeftNav
+          ClassifyLeftNav,
+          ClassifyRightItem
         },
       computed:{
         ...mapState({

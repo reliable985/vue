@@ -36,11 +36,11 @@
   import {mapState} from 'vuex'
   import Swiper from 'swiper'
   export default {
-     data(){
-       return{
-         arr1:[],
-       }
-     },
+    data(){
+      return{
+        arr1:[],
+      }
+    },
     name: "Customize",
     computed:{
       ...mapState({
@@ -49,11 +49,11 @@
     },
     watch:{
       personalShop (val) {
-           if (val) {
-             for (var i = 0; i < val.length; i+=3) {
-               this.arr1.push(val.slice(i,  i+3))
-             }
-           }
+        if (val) {
+          for (var i = 0; i < val.length; i+=3) {
+            this.arr1.push(val.slice(i,  i+3))
+          }
+        }
         this.$nextTick(()=>{
           new Swiper ('.swiper-container', {
             loop: true, // 循环模式选项
@@ -102,11 +102,11 @@
       float left
       width 216px
       margin-left 25px
-     img
-       background #f5f5f5
-       width 216px
-       height 216px
-       display flex
+    img
+      background #f5f5f5
+        width 216px
+      height 216px
+      display flex
 
     .span_box
       margin-top 20px

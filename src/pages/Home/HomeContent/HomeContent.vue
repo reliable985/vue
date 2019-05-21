@@ -1,19 +1,19 @@
 <template>
-<div class="content">
-  <HomeOneSwiper/>
-  <Servrce/>
-  <GoodsCategory/>
-  <GoodDiary/>
-  <NeteaseRecommended/>
-  <Customize/>,
-  <FlashSaleModule/>
-  <NewItemList/>
-  <PopularItemList/>
-  <TopicList/>
-  <zhongChouList/>
-  <CategoryModule/>
-  <HomeBottom/>
-</div>
+  <div class="content">
+    <HomeOneSwiper/>
+    <Servrce/>
+    <GoodsCategory/>
+    <GoodDiary/>
+    <NeteaseRecommended/>
+    <Customize/>,
+    <FlashSaleModule/>
+    <NewItemList/>
+    <PopularItemList/>
+    <TopicList/>
+    <zhongChouList/>
+    <CategoryModule/>
+    <HomeBottom/>
+  </div>
 </template>
 
 <script>

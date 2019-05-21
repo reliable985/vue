@@ -1,11 +1,16 @@
 <template>
-    <div>GeneralThings</div>
+    <div>
+      <ThingHeader/>
+    </div>
 </template>
 
 <script>
+  import ThingHeader from './Thing-header/ThingHeader'
     export default {
-
-        name: "GeneralThings"
+      name: "GeneralThings",
+      components:{
+        ThingHeader
+      }
     }
 </script>
 
