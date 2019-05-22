@@ -14,11 +14,12 @@
   }
 }*/
 
-import {reqHomeData,reqCategoryData,reqRecommendData} from '../api/index'
+import {reqHomeData, reqCategoryData, reqRecommendData, reqRecommendTabs} from '../api/index'
 import {
   GET_HOME_DATA,
   GET_CATEGORY_DATA,
- // GET_RECOMMEND_DATA
+  GET_RECOMMEND_DATA,
+  GET_RECOMMEND_TABS
 } from "./mutation-types"
 export default {
 
@@ -49,22 +50,26 @@ export default {
         alert('shibai ')
       }
   },
-  /*async getCecommendData({commit}){
-           const result3= await reqRecommendData()
-          if (result3.code===200){
-            //console.log(result3.data)
+  async getCecommendData({commit}){
+           const commendData= await reqRecommendData()
+           const  result4 = commendData.data
 
+          if (commendData.code==='200'){
+            commit(GET_RECOMMEND_DATA,result4)
           } else {
             alert('报错')
           }
-        }*/
+        },
 
+  async getreqRecommendTabs({commit}){
+     const  Tab= await reqRecommendTabs()
 
+     const  Tabs =Tab.data
+     if (Tab.code===200+''){
+       commit(GET_RECOMMEND_TABS,Tabs)
+     }else {
+       alert('获取数据失败')
+     }
 
-
-
-
-
-
-
+  }
 }

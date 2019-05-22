@@ -6,6 +6,8 @@ import Home from 'pages/Home/Home'
 import Search from 'pages/Personage/Search/Seaech'
 import Login from 'pages/Personage/Login/Login'
 import EmailLogin from 'pages/Personage/Login/Email-login'
+import Find from 'pages/GeneralThings/Find/Find'
+import Selection from 'pages/GeneralThings/Selection/Selection'
 export default [
   {//首页路由
     path:'/home',
@@ -25,9 +27,23 @@ export default [
   {//食物路由
     path:'/generalThings',
     component:GeneralThings,
+    children:[
+      {
+        path: '/generalThings/find',
+        component:Find,
+        meta:{
+          isSHowFooter:true
+        }
+      },
+      {
+        path: '/generalThings/selection',
+        component:Selection,
+      }
+    ],
     meta:{
       isSHowFooter:true
-    }
+    },
+
   },
   {//购物车路由
     path:'/shoppingCat',

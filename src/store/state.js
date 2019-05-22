@@ -6,6 +6,7 @@
  export default {
    homeData:[],
    categoryData:[],
-   /*cecommendData:[],*/
+   cecommendData:[],
+   tabs:[]
 }
 

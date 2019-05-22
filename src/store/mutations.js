@@ -9,7 +9,8 @@
 import {
   GET_HOME_DATA,
   GET_CATEGORY_DATA,
-  //GET_RECOMMEND_DATA
+  GET_RECOMMEND_DATA,
+  GET_RECOMMEND_TABS
 } from "./mutation-types"
 export default {
   [GET_HOME_DATA](state,{homeData}){
@@ -18,8 +19,12 @@ export default {
  [GET_CATEGORY_DATA](state,categoryData){
     state.categoryData=categoryData
  },
- /* [GET_RECOMMEND_DATA](state,{cecommendData}){
+  [GET_RECOMMEND_DATA](state,cecommendData){
     state.cecommendData=cecommendData
-  }*/
+  },
+  [GET_RECOMMEND_TABS](state,tabs){
+    state.tabs=tabs
+  }
+
 
 }
