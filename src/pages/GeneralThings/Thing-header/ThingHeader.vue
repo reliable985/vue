@@ -31,11 +31,12 @@
         flag:false
       }
     },
-   /* async mounted() {
-         const result= await reqRecommendData()
-       console.log(result)
+    async mounted() {
+           const result=  await reqRecommendData()
 
-    }*/
+            console.log(result)
+
+    }
   }
 </script>
 

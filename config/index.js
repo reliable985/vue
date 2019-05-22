@@ -12,12 +12,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       proxy: {
-        '/api': {    //将http://m.you.163.com印射为/apis
-          target: 'http://m.you.163.com',  // 接口域名
-          secure: true,  // 如果是https接口，需要配置这个参数
-          changeOrigin: true,  //是否跨域
-          pathRewrite: {
-            '^/api': ''   //需要rewrite的,
+        '/api': {    // 匹配所有以 '/api'开头的请求路径
+          target: 'http://m.you.163.com',    // 代理目标的基础路径
+          changeOrigin: true,    // 支持跨域
+          pathRewrite: {    // 重写路径: 去掉路径中开头的'/api'
+            '^/api': ''
           }
         }
       }

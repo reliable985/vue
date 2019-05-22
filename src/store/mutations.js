@@ -9,7 +9,7 @@
 import {
   GET_HOME_DATA,
   GET_CATEGORY_DATA,
-  GET_RECOMMEND_DATA
+  //GET_RECOMMEND_DATA
 } from "./mutation-types"
 export default {
   [GET_HOME_DATA](state,{homeData}){

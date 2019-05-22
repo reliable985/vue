@@ -1,20 +1,15 @@
-
 import Vue from 'vue'
 import app from './app'
 import router from './router'
-import axios from 'axios'
+import  axios from 'axios'
 import VueLazyload from 'vue-lazyload'
 import store from './store'
 import 'lib-flexible/flexible'
 import './Validate'
-
-
-require('./mockData/mockServer')//引入mock数据
+require('./mockData/mockServer')
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.use(VueLazyload)
-
-
 
 new Vue({
   el: '#app',
